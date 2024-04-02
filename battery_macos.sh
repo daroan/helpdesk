@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# ~/Desktop/battery_macos.txt
-
-# Apaga ultimo arquivo
-rm ~/Desktop/battery.txt
-
 read -p "NextCloud Username: " username
 read -s -p "NextCloud Password: " password
 
