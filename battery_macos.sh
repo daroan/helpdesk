@@ -17,7 +17,7 @@ while true; do
     timenow=$(date '+%Y-%m-%d %X UTC')
 
     # Registra as informações no arquivo de log
-    echo "~~~~~~~~~" >> ~/Desktop/battery_macos.txt
+    echo "~~~~~~~~~" >> "~/Desktop/battery_${serial_number}.txt"
     echo "$timenow" >> ~/Desktop/battery_macos.txt
     echo "Serial Number: $serial_number" >> ~/Desktop/battery_macos.txt
     echo "$battery_info" >> ~/Desktop/battery_macos.txt
