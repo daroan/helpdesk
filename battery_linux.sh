@@ -7,9 +7,9 @@
 # echo
 
 # Verificar as credenciais
-if [ "$username" != "test1357" ] || [ "$password" != "test1357" ]; then
-    echo "Invalid username or password. Exiting."
-fi
+# if [ "$username" != "test1357" ] || [ "$password" != "test1357" ]; then
+#     echo "Invalid username or password. Exiting."
+# fi
 
 # Função para obter informações completas da bateria e do PC
 get_battery_and_pc_info() {
@@ -40,7 +40,7 @@ while true; do
     pc_serial=$(sudo dmidecode -s system-serial-number)
 
     # Nome do arquivo de log com o número de série do PC
-    log_file="${pc_serial}_bat.txt"
+    log_file="~\${pc_serial}_bat.txt"
 
     # Salvar informações em um arquivo com timestamp
     timestamp=$(date +"%Y-%m-%d_%H:%M:%S")
