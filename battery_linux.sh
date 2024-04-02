@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Solicitar login do usuário
-echo "Login required"
-read -p "Username: " username
-read -s -p "Password: " password
-echo
+# echo "Login required"
+# read -p "Username: " username
+# read -s -p "Password: " password
+# echo
 
 # Verificar as credenciais
 if [ "$username" != "test1357" ] || [ "$password" != "test1357" ]; then
