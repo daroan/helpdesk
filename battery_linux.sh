@@ -40,7 +40,7 @@ while true; do
     pc_serial=$(sudo dmidecode -s system-serial-number)
 
     # Nome do arquivo de log com o número de série do PC
-    log_file="~\${pc_serial}_bat.txt"
+    log_file=Desktop/"${pc_serial}_bat.txt"
 
     # Salvar informações em um arquivo com timestamp
     timestamp=$(date +"%Y-%m-%d_%H:%M:%S")
