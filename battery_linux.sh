@@ -49,7 +49,7 @@ while true; do
     echo "-------------------DaRoAn---------------------" >> "$log_file"
 
     # Enviar para Nextcloud
-    #curl -u $username:$password -T $log_file https://cloud01.opsdata.ch/remote.php/dav/files/atlasprodigio/
+    #curl -u ${username}:${password} -T ${log_file} https://cloud01.opsdata.ch/remote.php/dav/files/atlasprodigio/
     
     # Informações no terminal
     echo "Bat and PC Info at $timestamp:"
