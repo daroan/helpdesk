@@ -23,7 +23,7 @@ while true; do
     echo "$battery_info" >> ~/Desktop/battery_macos.txt
 
     # Enviar para Nextcloud
-    curl -u ${username}:${password} -T ~/Desktop/battery_macos.txt https://cloud01.opsdata.ch/remote.php/dav/files/atlasprodigio/
+    curl -u ${username}:${password} -T "~/Desktop/battery_${serial_number}.txt" https://cloud01.opsdata.ch/remote.php/dav/files/atlasprodigio/
     
     # Espera 5 minutos
     echo $timenow
