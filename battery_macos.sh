@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# ~/Desktop/battery_macos.txt
+
 # Apaga ultimo arquivo
 rm ~/Desktop/battery.txt
 
@@ -18,9 +20,9 @@ while true; do
 
     # Registra as informações no arquivo de log
     echo "~~~~~~~~~" >> "~/Desktop/battery_${serial_number}.txt"
-    echo "$timenow" >> ~/Desktop/battery_macos.txt
-    echo "Serial Number: $serial_number" >> ~/Desktop/battery_macos.txt
-    echo "$battery_info" >> ~/Desktop/battery_macos.txt
+    echo "$timenow" >> "~/Desktop/battery_${serial_number}.txt"
+    echo "Serial Number: $serial_number" >> "~/Desktop/battery_${serial_number}.txt"
+    echo "$battery_info" >> "~/Desktop/battery_${serial_number}.txt"
 
     # Enviar para Nextcloud
     curl -u ${username}:${password} -T "~/Desktop/battery_${serial_number}.txt" https://cloud01.opsdata.ch/remote.php/dav/files/atlasprodigio/
