@@ -2,8 +2,9 @@
 #!/bin/bash
 
 # From site https://lindevs.com/install-inxi-on-ubuntu/
+# sudo wget -O /usr/local/bin/inxi https://raw.githubusercontent.com/smxi/inxi/master/inxi
 
-sudo wget -O /usr/local/bin/inxi https://raw.githubusercontent.com/smxi/inxi/master/inxi
+sudo wget -O /usr/local/bin/inxi https://raw.githubusercontent.com/daroan/helpdesk/master/inxi
 
 sudo chmod a+x /usr/local/bin/inxi
 
