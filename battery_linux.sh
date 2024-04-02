@@ -2,8 +2,8 @@
 
 # Solicitar login do usuário
 # echo "Login required"
-# read -p "Username: " username
-# read -s -p "Password: " password
+read -p "NextCloud Username: " username
+read -s -p "NextCloud Password: " password
 # echo
 
 # Verificar as credenciais
@@ -48,6 +48,9 @@ while true; do
     echo "$info" >> "$log_file"
     echo "-------------------DaRoAn---------------------" >> "$log_file"
 
+    # Enviar para Nextcloud
+    #curl -u username:password -T /Users/mac/Downloads/test.sh https://cloud01.opsdata.ch/remote.php/dav/files/atlasprodigio/
+    
     # Informações no terminal
     echo "Bat and PC Info at $timestamp:"
     
