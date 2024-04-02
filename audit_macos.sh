@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Apaga ultimo arquivo
-rm ~/Desktop/audit_mac.txt
-
 # ObtŽm informa›es do sistema
 timenow=$(date '+%Y-%m-%d %X UTC')
 
