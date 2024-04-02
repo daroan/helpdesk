@@ -3,6 +3,9 @@
 # Apaga ultimo arquivo
 rm ~/Desktop/battery.txt
 
+read -p "NextCloud Username: " username
+read -s -p "NextCloud Password: " password
+
 # Obtém o número de série do Mac
 serial_number=$(system_profiler SPHardwareDataType | awk '/Serial Number/ {print $4}')
 
@@ -14,11 +17,14 @@ while true; do
     timenow=$(date '+%Y-%m-%d %X UTC')
 
     # Registra as informações no arquivo de log
-    echo "~~~~~~~~~" >> ~/Desktop/battery.txt
-    echo "$timenow" >> ~/Desktop/battery.txt
-    echo "Serial Number: $serial_number" >> ~/Desktop/battery.txt
-    echo "$battery_info" >> ~/Desktop/battery.txt
+    echo "~~~~~~~~~" >> ~/Desktop/battery_macos.txt
+    echo "$timenow" >> ~/Desktop/battery_macos.txt
+    echo "Serial Number: $serial_number" >> ~/Desktop/battery_macos.txt
+    echo "$battery_info" >> ~/Desktop/battery_macos.txt
 
+    # Enviar para Nextcloud
+    curl -u username:password -T ~/Desktop/battery_macos.txt https://cloud01.opsdata.ch/remote.php/dav/files/atlasprodigio/
+    
     # Espera 5 minutos
     echo $timenow
     sleep 300
