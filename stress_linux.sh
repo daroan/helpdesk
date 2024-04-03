@@ -1,1 +1,5 @@
-# Stress test in Linux
+#!/bin/bash
+
+sudo apt -y install stress-ng
+
+stress-ng
