@@ -1,5 +1,9 @@
 #!/bin/bash
 
-sudo apt -y install stress-ng
+sudo apt install y- flatpak
 
-stress-ng
+flatpak --user remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+flatpak install -y flathub com.leinardi.gst
+
+flatpak run com.leinardi.gst
