@@ -15,6 +15,6 @@ echo "
 Storage Information: 
 " >> ~/Desktop/audit_test.txt
 
-lsblk -d -o rota >> ~/Desktop/audit_test.txt
+lsblk -d -o name,rota >> ~/Desktop/audit_test.txt
 
 
