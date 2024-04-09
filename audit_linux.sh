@@ -11,6 +11,10 @@ sudo chmod a+x /usr/local/bin/inxi
 # Our command to get hardware specifications
 sudo inxi -Fxxc 0 > Desktop/audit_test.txt
 
-lsblk -d -o name,rota >> /home/Desktop/audit_test.txt
+echo "
+Storage Information: 
+" >> ~/Desktop/audit_test.txt
+
+lsblk -d -o name,rota >> ~/Desktop/audit_test.txt
 
 
