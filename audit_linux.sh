@@ -12,9 +12,8 @@ sudo chmod a+x /usr/local/bin/inxi
 sudo inxi -Fxxc 0 > Desktop/audit_test.txt
 
 echo "
-Storage Information: 
-" >> ~/Desktop/audit_test.txt
+Storage Information:" >> Desktop/audit_test.txt
 
-lsblk -d -o name,rota >> ~/Desktop/audit_test.txt
+sudo lsblk -o rota >> Desktop/audit_test.txt
 
 
