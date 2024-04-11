@@ -6,7 +6,7 @@ read -p "NextCloud Username: " username
 read -s -p "NextCloud Password: " password
 # echo
 
-# sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
 
 # Função para obter informações completas da bateria e do PC
 get_battery_and_pc_info() {
