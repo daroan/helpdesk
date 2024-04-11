@@ -6,6 +6,9 @@ read -p "NextCloud Username: " username
 read -s -p "NextCloud Password: " password
 # echo
 
+# sudo apt update
+# sudo apt install -y curl
+
 sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
 
 # Função para obter informações completas da bateria e do PC
