@@ -18,8 +18,4 @@ flatpak --user remote-add --if-not-exists flathub https://flathub.org/repo/flath
 
 flatpak install -y flathub com.leinardi.gst
 
-firefox https://cloud01.opsdata.ch/index.php/login
-
-sudo gnome-screenshot -i
-
 flatpak run com.leinardi.gst
