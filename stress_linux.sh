@@ -22,4 +22,4 @@ flatpak run com.leinardi.gst
 
 sleep 3600
 
-gnome-screenshot -f ~/Desktop/xstress.png
+gnome-screenshot -f $log_file
