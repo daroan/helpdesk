@@ -20,6 +20,6 @@ flatpak install -y flathub com.leinardi.gst
 
 flatpak run com.leinardi.gst
 
-sleep 3600
+sleep 1
 
 gnome-screenshot -f $log_file
