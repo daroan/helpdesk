@@ -15,7 +15,7 @@ sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.ta
 pc_serial=$(sudo dmidecode -s system-serial-number)
 
 # Nome do arquivo de log com o número de série do PC
-log_file=Desktop/"${pc_serial}_bat.txt"
+log_file=Desktop/"battery_${pc_serial}.txt"
 
 sudo rm $log_file
 
