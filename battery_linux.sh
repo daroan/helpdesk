@@ -11,6 +11,14 @@ read -s -p "NextCloud Password: " password
 
 sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
 
+# Obter o número de série do PC
+pc_serial=$(sudo dmidecode -s system-serial-number)
+
+# Nome do arquivo de log com o número de série do PC
+log_file=Desktop/"${pc_serial}_bat.txt"
+
+sudo rm $log_file
+
 # Função para obter informações completas da bateria e do PC
 get_battery_and_pc_info() {
     # Obter informações do número de série do PC
@@ -35,12 +43,6 @@ while true; do
     
     # Coletar informações da bateria e do PC
     info=$(get_battery_and_pc_info)
-
-    # Obter o número de série do PC
-    pc_serial=$(sudo dmidecode -s system-serial-number)
-
-    # Nome do arquivo de log com o número de série do PC
-    log_file=Desktop/"${pc_serial}_bat.txt"
 
     # Salvar informações em um arquivo com timestamp
     timestamp=$(date +"%Y-%m-%d_%H:%M:%S")
