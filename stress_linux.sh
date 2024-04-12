@@ -18,9 +18,8 @@ flatpak --user remote-add --if-not-exists flathub https://flathub.org/repo/flath
 
 flatpak install -y flathub com.leinardi.gst
 
-gnome-screenshot --delay=3700 --file=$log_file
-
-flatpak run com.leinardi.gst
+sudo gnome-screenshot --delay=3700 --file=$log_file
 
 firefox https://cloud01.opsdata.ch/index.php/login
 
+flatpak run com.leinardi.gst
