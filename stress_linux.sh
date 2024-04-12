@@ -12,7 +12,7 @@ sudo apt update
 
 sudo apt install -y flatpak
 
-sudo apt install -y gnome-screenshot
+# sudo apt install -y gnome-screenshot
 
 flatpak --user remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
