@@ -7,6 +7,8 @@
 pc_serial=$(sudo dmidecode -s system-serial-number)
 log_file=Desktop/"${pc_serial}_audit_test.txt"
 
+sudo rm $log_file
+
 sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
 
 sudo wget -O /usr/local/bin/inxi https://raw.githubusercontent.com/daroan/helpdesk/master/inxi
