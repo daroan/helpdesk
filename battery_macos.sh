@@ -6,6 +6,8 @@ read -s -p "NextCloud Password: " password
 # Obtém o número de série do Mac
 serial_number=$(system_profiler SPHardwareDataType | awk '/Serial Number/ {print $4}')
 
+rm ~/Desktop/battery_${serial_number}.txt
+
 # Loop infinito para testar a bateria a cada 5 minutos
 while true; do
     # Obtém informações da bateria
