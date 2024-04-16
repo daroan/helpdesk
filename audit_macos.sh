@@ -10,7 +10,7 @@ resolution=$(system_profiler SPDisplaysDataType | awk '/Resolution:/ {print $2, 
 ram=$(sysctl -n hw.memsize | awk '{print $0/1024^3 " GB"}')
 disk=$(system_profiler SPNVMeDataType)
 battery_capacity=$(system_profiler SPPowerDataType | grep -A3 -B7 "Condition")
-battery_health=$(system_profiler SPPowerDataType | grep -A3 -B7 "Maximum Capacity"
+battery_health=$(system_profiler SPPowerDataType | grep -A3 -B7 "Maximum Capacity")
 
 # ObtŽm o nœmero de sŽrie do Mac
 serial_number=$(system_profiler SPHardwareDataType | awk '/Serial/ {print $4}')
