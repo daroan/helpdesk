@@ -10,7 +10,6 @@ resolution=$(system_profiler SPDisplaysDataType | awk '/Resolution:/ {print $2, 
 ram=$(sysctl -n hw.memsize | awk '{print $0/1024^3 " GB"}')
 disk=$(system_profiler SPNVMeDataType)
 battery_capacity=$(system_profiler SPPowerDataType | grep -A3 -B7 "Condition")
-battery_health=$(system_profiler SPPowerDataType | grep -A3 -B7 "Maximum Capacity")
 
 # ObtŽm o nœmero de sŽrie do Mac
 serial_number=$(system_profiler SPHardwareDataType | awk '/Serial/ {print $4}')
@@ -27,5 +26,5 @@ echo "CPU: $cpu" >> ~/Desktop/${serial_number}_audit_mac.txt
 echo "Screen_Resolution: $resolution" >> ~/Desktop/${serial_number}_audit_mac.txt
 echo "RAM: $ram" >> ~/Desktop/${serial_number}_audit_mac.txt
 echo "Storage: $disk" >> ~/Desktop/${serial_number}_audit_mac.txt
-echo "Battery: $battery_capacity" >> ~/Desktop/${serial_number}_audit_mac.txt
-echo "Battery Health: $battery_health" >> ~/Desktop/${serial_number}_audit_mac.txt
+echo "Battery: 
+$battery_capacity" >> ~/Desktop/${serial_number}_audit_mac.txt
