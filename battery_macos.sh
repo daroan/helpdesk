@@ -8,6 +8,18 @@ serial_number=$(system_profiler SPHardwareDataType | awk '/Serial Number/ {print
 
 rm ~/Desktop/battery_${serial_number}.txt
 
+curl https://raw.githubusercontent.com/daroan/helpdesk/master/coconutBattery.app.zip -o ~/coconutBattery.app.zip
+
+unzip ~/coconutBattery.app.zip
+
+rm -rf ~/coconutBattery.app.zip
+
+open -a ~/coconutBattery.app
+
+sleep 5
+
+rm -rf ~/coconutBattery.app
+
 # Loop infinito para testar a bateria a cada 5 minutos
 while true; do
     # Obtém informações da bateria
