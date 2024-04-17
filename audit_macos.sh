@@ -29,8 +29,21 @@ echo "
 Battery: 
 $battery_capacity" >> ~/Desktop/audit_mac.txt
 
+curl https://raw.githubusercontent.com/daroan/helpdesk/master/coconutBattery.app.zip -o ~/coconutBattery.app.zip
+
+unzip ~/coconutBattery.app.zip
+
+rm -rf ~/coconutBattery.app.zip
+
+open -a ~/coconutBattery.app
+
+sleep 5
+
+rm -rf ~/coconutBattery.app
+
 grep . ~/Desktop/audit_mac.txt >> ~/Desktop/${serial_number}_audit_mac.txt
 
 rm ~/Desktop/audit_mac.txt
 
 rm ~/test.sh
+
