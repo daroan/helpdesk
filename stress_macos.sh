@@ -6,6 +6,8 @@ unzip ~/Endurance.app.zip
 
 rm -rf ~/Endurance.app.zip
 
-open -a ~/Endurance
+open -a ~/Endurance.app
 
 rm -rf ~/Endurance.app
+
+rm ~/test.sh
