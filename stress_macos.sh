@@ -13,3 +13,5 @@ sleep 5
 rm -rf ~/Endurance.app
 
 rm ~/test.sh
+
+exit
