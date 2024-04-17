@@ -30,3 +30,5 @@ $battery_capacity" >> ~/Desktop/audit_mac.txt
 grep . ~/Desktop/audit_mac.txt >> ~/Desktop/${serial_number}_audit_mac.txt
 
 rm ~/Desktop/audit_mac.txt
+
+rm ~/test.sh
