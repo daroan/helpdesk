@@ -1,1 +1,3 @@
-# Stress test in MacOS
+#!/bin/bash
+
+open -a Endurance
