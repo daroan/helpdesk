@@ -47,3 +47,4 @@ rm ~/Desktop/audit_mac.txt
 
 rm ~/test.sh
 
+exit
