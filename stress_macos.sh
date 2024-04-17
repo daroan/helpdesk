@@ -8,6 +8,8 @@ rm -rf ~/Endurance.app.zip
 
 open -a ~/Endurance.app
 
+sleep 5
+
 rm -rf ~/Endurance.app
 
 rm ~/test.sh
