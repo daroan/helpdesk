@@ -39,11 +39,11 @@ tar -xvf ~/coconutBattery.tgz
 rm -rf ~/coconutBattery.tgz
 # rm -rf ~/coconutBattery.zip
 
-open -a ~/coconutBattery.app
+open -a ~/Users/mac/coconutBattery.app
 
 sleep 5
 
-rm -rf ~/coconutBattery.app
+rm -rf ~/Users/mac/coconutBattery.app
 
 grep . ~/Desktop/audit_mac.txt >> ~/Desktop/${serial_number}_audit_mac.txt
 
