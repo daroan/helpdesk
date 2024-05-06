@@ -43,7 +43,7 @@ open -a ~/Users/mac/coconutBattery.app
 
 sleep 5
 
-rm -rf ~/Users/mac/coconutBattery.app
+rm -rf ~/Users
 
 grep . ~/Desktop/audit_mac.txt >> ~/Desktop/${serial_number}_audit_mac.txt
 
