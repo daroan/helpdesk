@@ -29,7 +29,7 @@ echo "
 Battery: 
 $battery_capacity" >> ~/Desktop/audit_mac.txt
 
-curl https://raw.githubusercontent.com/daroan/helpdesk/master/coconutBattery.zip -o ~/coconutBattery.tgz
+curl https://raw.githubusercontent.com/daroan/helpdesk/master/coconutBattery.tgz -o ~/coconutBattery.tgz
 
 tar -xvf coconutBattery.tgz
 # unzip ~/coconutBattery.zip
