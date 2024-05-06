@@ -29,6 +29,8 @@ echo "
 Battery: 
 $battery_capacity" >> ~/Desktop/audit_mac.txt
 
+open -a Safari https://coconut-flavour.com/coconutbattery/
+
 curl https://raw.githubusercontent.com/daroan/helpdesk/master/coconutBattery.tgz -o ~/coconutBattery.tgz
 
 tar -xvf coconutBattery.tgz
