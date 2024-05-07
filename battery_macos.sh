@@ -8,17 +8,19 @@ serial_number=$(system_profiler SPHardwareDataType | awk '/Serial Number/ {print
 
 rm ~/Desktop/battery_${serial_number}.txt
 
-curl https://raw.githubusercontent.com/daroan/helpdesk/master/coconutBattery.app.zip -o ~/coconutBattery.app.zip
+open -a Safari https://coconut-flavour.com/coconutbattery/
 
-unzip ~/coconutBattery.app.zip
+curl https://raw.githubusercontent.com/daroan/helpdesk/master/coconutBattery.tgz -o ~/coconutBattery.tgz
 
-rm -rf ~/coconutBattery.app.zip
+tar -xvf ~/coconutBattery.tgz
 
-open -a ~/coconutBattery.app
+rm -rf ~/coconutBattery.tgz
+
+open -a ~/Users/mac/coconutBattery.app
 
 sleep 5
 
-rm -rf ~/coconutBattery.app
+rm -rf ~/Users
 
 # Loop infinito para testar a bateria a cada 5 minutos
 while true; do
