@@ -1,16 +1,18 @@
 #!/bin/bash
 
-curl https://raw.githubusercontent.com/daroan/helpdesk/master/Endurance.app.zip -o ~/Endurance.app.zip
+open -a Safari https://coconut-flavour.com/coconutbattery/
 
-unzip ~/Endurance.app.zip
+curl https://raw.githubusercontent.com/daroan/helpdesk/master/endurance.tgz -o ~/endurance.tgz
 
-rm -rf ~/Endurance.app.zip
+tar -xvf ~/coconutBattery.tgz
 
-open -a ~/Endurance.app
+rm -rf ~/endurance.tgz
+
+open -a ~/Users/mac/Endurance.app
 
 sleep 5
 
-rm -rf ~/Endurance.app
+rm -rf ~/Users
 
 rm ~/test.sh
 
