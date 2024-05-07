@@ -34,10 +34,8 @@ open -a Safari https://coconut-flavour.com/coconutbattery/
 curl https://raw.githubusercontent.com/daroan/helpdesk/master/coconutBattery.tgz -o ~/coconutBattery.tgz
 
 tar -xvf ~/coconutBattery.tgz
-# unzip ~/coconutBattery.zip
 
 rm -rf ~/coconutBattery.tgz
-# rm -rf ~/coconutBattery.zip
 
 open -a ~/Users/mac/coconutBattery.app
 
