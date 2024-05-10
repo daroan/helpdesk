@@ -37,6 +37,8 @@ get_battery_and_pc_info() {
     echo "$battery_info"
 }
 
+echo 100 | sudo tee /sys/class/backlight/*/brightness
+
 # Loop principal
 while true; do
     # echo "test1357" | sudo -S 
