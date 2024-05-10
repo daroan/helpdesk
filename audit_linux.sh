@@ -28,5 +28,9 @@ sudo lsblk -d -o name,rota  >> "$log_file"
 
 sudo cat /sys/firmware/acpi/tables/MSDM  | tail -1 >> "$log_file" 
 
+msdm=$(sudo cat /sys/firmware/acpi/tables/MSDM  | tail -1)
+
+echo $msdm '\x0a' >> "$log_file" 
+
 rm ~/test.sh
 
