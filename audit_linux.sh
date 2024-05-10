@@ -26,5 +26,7 @@ Storage Information:"  >> "$log_file"
 sudo lsblk -d -o name,rota  >> "$log_file"
 #>> Desktop/audit_pc.txt
 
+sudo cat /sys/firmware/acpi/tables/MSDM  | tail -1 >> "$log_file" 
+
 rm ~/test.sh
 
