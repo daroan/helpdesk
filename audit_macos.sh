@@ -4,6 +4,7 @@
 timenow=$(date '+%Y-%m-%d %X UTC')
 gpu=$(system_profiler SPDisplaysDataType)
 disk=$(system_profiler SPNVMeDataType | grep -B200 "Detachable Drive")
+disk1=$(system_profiler SPSerialATADataType | grep -B200 "Detachable Drive")
 battery_capacity=$(system_profiler SPPowerDataType | grep -A3 -B7 "Condition")
 hardware_data=$(system_profiler SPHardwareDataType)
 serial_number=$(system_profiler SPHardwareDataType | awk '/Serial/ {print $4}')
@@ -23,7 +24,7 @@ echo "
 $gpu" >> ~/Desktop/audit_mac.txt
 
 echo "
-Storage: $disk" >> ~/Desktop/audit_mac.txt
+Storage: $disk $disk1" >> ~/Desktop/audit_mac.txt
 
 echo "
 Battery: 
