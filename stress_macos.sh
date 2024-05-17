@@ -1,12 +1,13 @@
 #!/bin/bash
 
-open -a Safari https://coconut-flavour.com/coconutbattery/
+#curl https://raw.githubusercontent.com/daroan/helpdesk/master/endurance.tgz -o ~/endurance.tgz
+curl https://raw.githubusercontent.com/daroan/helpdesk/master/endurance.tar.gz -o ~/endurance.tar.gz
 
-curl https://raw.githubusercontent.com/daroan/helpdesk/master/endurance.tgz -o ~/endurance.tgz
+#tar -xvf ~/endurance.tgz
+tar -zxvf ~/endurance.tar.gz
 
-tar -xvf ~/endurance.tgz
-
-rm -rf ~/endurance.tgz
+#rm -rf ~/endurance.tgz
+rm -rf ~/endurance.tar.gz
 
 open -a ~/Users/mac/Endurance.app
 
