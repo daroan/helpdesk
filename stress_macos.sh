@@ -4,7 +4,7 @@ open -a Safari https://coconut-flavour.com/coconutbattery/
 
 curl https://raw.githubusercontent.com/daroan/helpdesk/master/endurance.tgz -o ~/endurance.tgz
 
-tar -xvf ~/coconutBattery.tgz
+tar -xvf ~/endurance.tgz
 
 rm -rf ~/endurance.tgz
 
